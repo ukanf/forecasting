@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# virtual environment
+virtenv_tcc/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# PyBuilder
+target/
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+
+# DATASET!!
+datasets/
+experiments/
+jointplot/
+missing_data_explorer/
+correlation_matrix/
+
+# Log files
+# *.log
+# logs/
+
+# virtualenv
+venv/
+
+# idea files
+.idea/
+
