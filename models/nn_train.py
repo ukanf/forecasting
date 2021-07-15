@@ -6,7 +6,7 @@ import itertools
 from keras.callbacks import EarlyStopping
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c) 2019 Lakes Environmental Software Inc. Felipe Ukan Pereira"
+__copyright__ = "(c)  Felipe Ukan Pereira"
 __license__ = "Proprietary"
 
 import numpy as np
@@ -38,7 +38,7 @@ import models.utils as utils
 def nn_multout_create(nn_params, unique_identifier, path_unique_identifier):
     """
     Main flow for creating the NN
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param nn_params: dictionary with parameters to be used for creating the NN and handling everything else,
     like saving graphs, using tensorboard, etc.
     :param unique_identifier: a str with the unique number for this run
@@ -373,7 +373,7 @@ def create_multout_cnn(trainX, trainY, batchsize, topology=None):
 def update_logger_and_info(logger, model, input_dict):
     """
     Thread that updates the logger file with the run status
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param logger:
     :param model:
     :param input_dict:
@@ -406,7 +406,7 @@ def update_logger_and_info(logger, model, input_dict):
 def rmse(y_true, y_pred):
     """
     Custom RMSE loss function
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param y_true:
     :param y_pred:
     :return:

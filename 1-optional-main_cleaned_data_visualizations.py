@@ -3,7 +3,7 @@ from handle_data import data_visualization
 import os
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c) 2019 Lakes Environmental Software Inc. Felipe Ukan Pereira"
+__copyright__ = "(c)  Felipe Ukan Pereira"
 __license__ = "Proprietary"
 
 # todo add "default_params" dict with the default values

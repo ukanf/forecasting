@@ -4,7 +4,7 @@ import os
 
 # def _load_nn(network_to_load):
 #     """ Loads Neural Network
-#     by Felipe Ukan - (c) 2019 Lakes Env. Software
+#     by Felipe Ukan - 
 #     :param network_to_load:
 #     :return:
 #     """
@@ -22,7 +22,7 @@ import os
 
 def lstm_multout_predict(axisX, network_to_load):
     """ Loads a nn and makes an individual prediction
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param axisX:
     :param network_to_load:
     :return:
@@ -42,7 +42,7 @@ def lstm_multout_predict(axisX, network_to_load):
 
 def save_nn(model, path_unique_identifier, unique_identifier):
     """ Saves Neural Network
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param model:
     :param path_unique_identifier:
     :param unique_identifier:

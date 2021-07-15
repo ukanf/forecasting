@@ -22,7 +22,7 @@ pd.set_option('display.max_rows', 500)
 
 def setup_logger(logger_name, log_file, level=logging.INFO):
     """ Function that creates a logger
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param logger_name: unique name to identify the logger
     :param log_file: relative name with path of file of log
     :param level: level of logging to be used
@@ -65,7 +65,7 @@ def retrieve_unique_unit_code(path_for_file_with_metadata, var_name):
 
 def write_dataframe_to_file(df, full_out_file_path):
     """ Saves the dataframe inside a new file in a new path
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param df:
     :param full_out_file_path:
     :return:
@@ -86,7 +86,7 @@ def write_dataframe_to_file(df, full_out_file_path):
 
 class _PythonObjectEncoder(json.JSONEncoder):
     """ Hack used internally to unwrap 'set' to 'list' and timestamp to str.
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     """
     def default(self, obj):
         if isinstance(obj, set):
@@ -98,7 +98,7 @@ class _PythonObjectEncoder(json.JSONEncoder):
 
 def file_exists(saving_path):
     """ Check if the file already exists
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param saving_path:
     :return:
     """
@@ -110,7 +110,7 @@ def file_exists(saving_path):
 
 def write_json_to_file(info, full_out_file_path):
     """
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param info:
     :param full_out_file_path:
     :return:
@@ -173,7 +173,7 @@ def _create_3d_lookback_array(data, look_back):
     Creates a 3 dimensional array for our LSTM/GRU networks.
     Dimensions are: (num samples, num time steps, num features). For example, we can have a output with 1024 rows, 25 lookback units (current + part 24 lookbacks), and O3 shifted 24 hours as input, i.e. (1024, 25, 1)
     this method creates a input shape of: (num samples, timesteps, num parameters to predict)
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param data: actual array with all the data
     :param look_back: int number that tells how many timesteps behind to look
     """
@@ -213,7 +213,7 @@ def remove_other_parameters_cols(df, parameters):
 def create_XY_arrays_multout(df, unique_identifier, v):
     """
     Creates input and output arrays.
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param unique_identifier:
     :param df: dataframe with the data
     :param v: namespace with all the variable values for NN (here we unpack the ones we will use)
@@ -347,7 +347,7 @@ def resolve_scaler(axisX, axisY, input_vars_names, output_vars_names, unique_ide
 # def get_stateful_dataset(dataset, batchsize):
 #     """
 #     Trims dataset to make it stateful (need to be divisible by the batchsize)
-#     by Felipe Ukan - (c) 2019 Lakes Env. Software
+#     by Felipe Ukan - 
 #     :param dataset:
 #     :param batchsize:
 #     :return:
@@ -360,7 +360,7 @@ def resolve_scaler(axisX, axisY, input_vars_names, output_vars_names, unique_ide
 def prepare_XY_arrays(axisX, axisY, unique_identifier, v):
     """
     Creates training and test sets
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param unique_identifier:
     :param axisX:
     :param axisY:
@@ -440,7 +440,7 @@ def clean_nan_from_samples(base_dataset, corresponding_dataset, v):
 def read_csvdata(v, unique_identifier, skipfooter=0):
     """
     Creates dataframe from csv file
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param v:
     :param unique_identifier:
     :param skipfooter:
@@ -472,7 +472,7 @@ def read_csvdata(v, unique_identifier, skipfooter=0):
 
 def create_modelloss_graph(history, savefile_path=False):
     """Generates and saves model loss graph
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param history:
     :param savefile_path:
     :return:
@@ -492,7 +492,7 @@ def create_realpredict_with_fill_graph(testY, testPredict, mae_result, var_name=
     """
     TODO: change this method to receive only a dictionary and unpack the necessary vars inside
     Creates real data and predicted data graph and fills around the real data the MAE error (expected mean absolute error)
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param testY:
     :param testPredict:
     :param mae_result:
@@ -543,7 +543,7 @@ def create_realpredict_graph(testY, testPredict, title='', savefile_path=False, 
     """
     TODO: change arguments to receive a dictionary
     Creates real data and predicted data graph
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param testY:
     :param testPredict:
     :param title:
@@ -578,7 +578,7 @@ def create_realpredict_graph(testY, testPredict, title='', savefile_path=False, 
 def save_realpredict_data(testY, testPredict, output_save_path):
     """
     Saves the real and predicted data as a csv file
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param testY:
     :param testPredict:
     :param output_save_path:
@@ -602,7 +602,7 @@ def save_realpredict_data(testY, testPredict, output_save_path):
 def calculate_MAE(real_values, predicted_values, label=None):
     """
     Calculates Mean Absolute Error <https://en.wikipedia.org/wiki/Mean_absolute_error>
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param real_values:
     :param predicted_values:
     :param label:
@@ -614,7 +614,7 @@ def calculate_MAE(real_values, predicted_values, label=None):
 def calculate_NMAE(real_values, predicted_values, min_value, max_value, label=None):
     """
     Calculates Normalized Mean Absolute Error <https://en.wikipedia.org/wiki/Mean_absolute_error>
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param real_values:
     :param predicted_values:
     :param label:
@@ -626,7 +626,7 @@ def calculate_NMAE(real_values, predicted_values, min_value, max_value, label=No
 def calculate_RMSE(real_values, predicted_values, label=None):
     """
     Calculates Root Mean Squared Error <https://en.wikipedia.org/wiki/Root-mean-square_deviation>
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param real_values:
     :param predicted_values:
     :param label:
@@ -638,7 +638,7 @@ def calculate_RMSE(real_values, predicted_values, label=None):
 def calculate_NRMSE(real_values, predicted_values, min_value, max_value, label=None):
     """
     Calculates Normalized Root Mean Squared Error <https://en.wikipedia.org/wiki/Root-mean-square_deviation>
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param real_values:
     :param predicted_values:
     :param label:
@@ -664,7 +664,7 @@ def calculate_NRMSE(real_values, predicted_values, min_value, max_value, label=N
 
 def is_dataframe_ok(df):
     """ Checks if dataframe exists and if data inside is ok
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param df:
     :return:
     """
@@ -676,7 +676,7 @@ def is_dataframe_ok(df):
 def timeit(method):
     """ Decorator that measures time of a function
     original source: https://stackoverflow.com/questions/1622943/timeit-versus-timing-decorator
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param method:
     :return:
     """

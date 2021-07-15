@@ -3,7 +3,7 @@ from handle_data.utils import utils
 import os
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c) 2019 Lakes Environmental Software Inc. Felipe Ukan Pereira"
+__copyright__ = "(c)  Felipe Ukan Pereira"
 __license__ = "Proprietary"
 
 @utils.timeit
@@ -304,13 +304,13 @@ def main():
         'C_prefix': cleaned_dataset_path,
         "D_format": "AQCSV",
         "D_user": "felipe.kpereira@live.com",
-        "D_pass": "rubyheron82",
+        "D_pass": "XXXXX",
         'C_states': G_STATES,
         'C_input_dataset_path': raw_dataset_path,
         'years': [x for x in range(1997, 2019)],
     }
 
-    # download.download_usepa_raw(ALL_PARAMETERS)
+    download.download_usepa_raw(ALL_PARAMETERS)
 
     # download.download_usepa_station_list(ALL_PARAMETERS)
 

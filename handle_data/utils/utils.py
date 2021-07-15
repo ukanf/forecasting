@@ -25,7 +25,7 @@ import types
 
 def write_dataframe_to_file(df, full_out_file_path):
     """ Saves the dataframe inside a new file in a new path
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param df:
     :param full_out_file_path:
     :return:
@@ -47,7 +47,7 @@ def write_dataframe_to_file(df, full_out_file_path):
 
 class _PythonObjectEncoder(json.JSONEncoder):
     """ Hack used internally to unwrap 'set' to 'list' and timestamp to str.
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     """
     def default(self, obj):
         if isinstance(obj, set):
@@ -59,7 +59,7 @@ class _PythonObjectEncoder(json.JSONEncoder):
 
 def write_json_to_file(info, full_out_file_path):
     """
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param info:
     :param full_out_file_path:
     :return:
@@ -84,7 +84,7 @@ def write_json_to_file(info, full_out_file_path):
 
 def file_exists(saving_path):
     """ Check if the file already exists
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param saving_path:
     :return:
     """
@@ -112,7 +112,7 @@ def station_has_data(input_parameters, state, county, station):
 
 # def drop_other_cols(df, sites_to_keep):
 #     """
-#     by Felipe Ukan - (c) 2019 Lakes Env. Software
+#     by Felipe Ukan - 
 #     :param df:
 #     :param sites_to_keep:
 #     :return:
@@ -124,7 +124,7 @@ def station_has_data(input_parameters, state, county, station):
 
 def generate_input_parameters(input_parameters):
     """ Generates the possible inputs for cleaning and downloading data
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param input_parameters:
     :return:
     """
@@ -151,7 +151,7 @@ def generate_input_parameters(input_parameters):
 
 def _generate_input_parameters_info(inner_refine_parameters):
     """
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param inner_refine_parameters:
     :return:
     """
@@ -169,7 +169,7 @@ def _generate_input_parameters_info(inner_refine_parameters):
 
 def generate_input_parameters_refine(refine_parameters):
     """
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param refine_parameters:
     :return:
     """
@@ -207,7 +207,7 @@ def get_info_refine(refine_parameters, root_dir):
 
 def is_dataframe_ok(df):
     """ Checks if dataframe exists and if data inside is ok
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param df:
     :return:
     """
@@ -219,7 +219,7 @@ def is_dataframe_ok(df):
 
 def _create_run_folder(unique_identifier, prefix_id):
     """ Creates a folder that will hold the info for the dataset being created
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param unique_identifier:
     :param prefix_id:
     :return:
@@ -236,7 +236,7 @@ def _create_run_folder(unique_identifier, prefix_id):
 
 def get_new_init_config(refine_parameters):
     """ Creates new folder and unique number for dataset being created
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param refine_parameters:
     :return:
     """
@@ -248,7 +248,7 @@ def get_new_init_config(refine_parameters):
 
 def load_code_to_name_dicts(dict_params):
     """ Loads json file.. from state -> county (codes) get dictionaries to translate code to names
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param dict_params:
     :return:
     """
@@ -263,7 +263,7 @@ def load_code_to_name_dicts(dict_params):
 
 def setup_logger(logger_name, log_file, level=logging.INFO):
     """ Function that creates a logger
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param logger_name: unique name to identify the logger
     :param log_file: relative name with path of file of log
     :param level: level of logging to be used
@@ -282,7 +282,7 @@ def setup_logger(logger_name, log_file, level=logging.INFO):
 def timeit(method):
     """ Decorator that measures time of a function
     original source: https://stackoverflow.com/questions/1622943/timeit-versus-timing-decorator
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     :param method:
     :return:
     """

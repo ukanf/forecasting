@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c) 2019 Lakes Environmental Software Inc. Felipe Ukan Pereira"
+__copyright__ = "(c)  Felipe Ukan Pereira"
 __license__ = "Proprietary"
 
 map_code_to_name = {
@@ -36,7 +36,7 @@ map_code_to_name = {
 
 def my_fft(values, column):
     """ Fast Fourier Transform
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     """
     fourier = np.fft.rfft(values-np.mean(values))
     freq = np.fft.rfftfreq(len(values), 0.001)

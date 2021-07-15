@@ -3,7 +3,7 @@ from handle_data.utils import utils
 import os
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c) 2019 Lakes Environmental Software Inc."
+__copyright__ = "(c) "
 __license__ = "Proprietary"
 
 @utils.timeit

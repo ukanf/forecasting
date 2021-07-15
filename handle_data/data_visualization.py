@@ -13,7 +13,7 @@ import data_retriever as dr
 # ------------------- MISSING PERCENTAGE HEATMAP
 def vis_heatmap_missing_percentage(df, aux_group, vis_parameters):
     """
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     Creates heat map to visualize the data availability distribution
     :param df:
     :param aux_group:
@@ -80,7 +80,7 @@ def vis_heatmap_missing_percentage(df, aux_group, vis_parameters):
 
 def vis_missing_percentage(vis_parameters):
     """
-    by Felipe Ukan - (c) 2019 Lakes Env. Software
+    by Felipe Ukan - 
     Prepares data to send to vis_heatmap_missing_percentage in order to create heat
     matrix with missing percentage per station or parameter
     :param info_refine:

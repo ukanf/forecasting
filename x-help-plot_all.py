@@ -1,4 +1,4 @@
-"""by Felipe Ukan - (c) 2019 Lakes Env. Software
+"""by Felipe Ukan - 
 adapted from: https://machinelearningmastery.com/multivariate-time-series-forecasting-lstms-keras/
 
 Simple script to just rapidly plot all columns from a csv file
