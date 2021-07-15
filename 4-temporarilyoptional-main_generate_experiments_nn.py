@@ -11,6 +11,10 @@ import json
 import os
 import handle_data.utils as hd_utils
 
+__author__ = "Felipe Ukan Pereira"
+__copyright__ = "(c)  Felipe Ukan Pereira"
+__license__ = "Proprietary"
+
 default_params = json.loads(open(os.path.join('Templates', 'default_nn_params.json'), 'r').read())
 run_prefix = 'kuwait_firsttests'
 

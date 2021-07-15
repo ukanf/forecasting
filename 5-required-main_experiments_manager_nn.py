@@ -4,6 +4,9 @@ File that creates the neural networks
 import os
 from models.nn_helper import main_nn_helper
 
+__author__ = "Felipe Ukan Pereira"
+__copyright__ = "(c)  Felipe Ukan Pereira"
+__license__ = "Proprietary"
 
 def run_bash(cmd):
     p = os.subprocess.Popen(cmd, shell=True, stdout=os.subprocess.PIPE, executable='/bin/bash')
