@@ -3,7 +3,7 @@
 ## Overview of files in this repo
 
 Images:
-  - automationML.png: overview of what this repository does
+  - automationML.png: overview of the approach taken for training the neural network models. This is the target state we were aiming for, everything is present in the repo except "Post-analysis ('brain')" which was not implemented.
   - general-view.png: these are the logical steps taken when dealing with the data and how we approached the research.
   - pre-processing.png: a breakdown of the steps/actions taken in the "pre-processing" step.
 
