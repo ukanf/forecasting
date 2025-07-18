@@ -3,8 +3,6 @@ from handle_data.utils import utils
 import os
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c)  Felipe Ukan Pereira"
-__license__ = "Proprietary"
 
 @utils.timeit
 def main():

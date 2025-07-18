@@ -2,8 +2,6 @@ import imageio
 import os
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c)  Felipe Ukan Pereira"
-__license__ = "Proprietary"
 
 
 absolute_shared_folder = os.path.join('//winnas5', 'd$', 'ProjectData', 'ML_Forecast', 'KUWAIT')

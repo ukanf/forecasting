@@ -1,4 +1,4 @@
-# this guy will call 5-required-main_experiments_manager and simulate the future agent that will be implemented
+# this guy will call 4-required-main_experiments_manager and simulate the future agent that will be implemented
 import multiprocessing
 import os
 

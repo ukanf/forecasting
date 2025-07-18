@@ -5,8 +5,6 @@ import os
 from models.nn_helper import main_nn_helper
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c)  Felipe Ukan Pereira"
-__license__ = "Proprietary"
 
 def run_bash(cmd):
     p = os.subprocess.Popen(cmd, shell=True, stdout=os.subprocess.PIPE, executable='/bin/bash')
@@ -15,7 +13,6 @@ def run_bash(cmd):
 
 
 def kuwait_main():
-    # *** Implementing ***
     # CALLS helper WITH PARAMETERS WE WANT (overwrites default params)
     absolute_shared_folder = os.path.join('//winnas5', 'd$', 'ProjectData', 'ML_Forecast', 'KUWAIT')
     refined_test_full_path = os.path.join(absolute_shared_folder, 'datasets', 'final')
@@ -55,7 +52,6 @@ def kuwait_main():
 
 
 def main():
-    # *** Implementing ***
     # CALLS helper WITH PARAMETERS WE WANT (overwrites default params)
     absolute_shared_folder = os.path.join('datasets', 'US_Brian', 'localformat')
     helper_params = {

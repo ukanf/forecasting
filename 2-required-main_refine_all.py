@@ -3,8 +3,6 @@ from handle_data.utils import utils
 import os
 
 __author__ = "Felipe Ukan Pereira"
-__copyright__ = "(c)  Felipe Ukan Pereira"
-__license__ = "Proprietary"
 
 @utils.timeit
 def main():
@@ -82,9 +80,9 @@ def main():
 
     # refine.refine_usepa_dataset(REFINE_PARAMETERS)
 
-    # refine.refine_kuwait_dataset(KUWAIT_REFINE_PARAMETERS)
+    refine.refine_kuwait_dataset(KUWAIT_REFINE_PARAMETERS)
 
-    refine.refine_usbrian_dataset(USBRIAN_REFINE_PARAMETERS)
+    # refine.refine_usbrian_dataset(USBRIAN_REFINE_PARAMETERS)
 
 if __name__ == "__main__":
     main()
