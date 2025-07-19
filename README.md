@@ -9,9 +9,9 @@ Images:
 
 Python files:
   - 0-required-main_download_clean.py: it's a required step in the flow it downloads the data
-  - 1-optional-main_cleaned_data_visualizations.py: a optional step to give us more insights into the data we just downloaded - this is good to visualize the correlation matrix and also the missing data (most of the times we have huge gaps of data which are hard to know we have by just looking at the csv file we downloaded).
+  - 1-optional-main_cleaned_data_visualizations.py: a optional step to give us more insights into the data we just downloaded - this is good to visualize the correlation matrix and also the missing data (most of the times we have huge gaps of data which are easier to identify by looking at a graph).
   - 2-required-main_refine_all.py: a required step to prepare the dataset to be used for training a neural network.
-  - 3-optional-main_generate_experiments_nn.py: optional step which will generate different permutations of the neural network we want to train.
+  - 3-optional-main_generate_experiments_nn.py: optional step which will generate different permutations of inputs for the neural networks we want to train.
   - 4-required-main_experiments_manager_nn.py: step that will train the neural networks - it will unpack the parameters provided, sets up a logger so if the job dies in a machine we will know what happened as it's logged in a file
   - 5-optional-gif_generator.py: generates a gif to visualize the outputted predictions
   - x-help-plot_all.py: a script to plot the parameters of a csv file. Used to visualize wind, temperature, PPM2.5, etc in graphs.
@@ -46,4 +46,4 @@ folders:
     - Plot two time series in one graph for comparison.
 
 
-------- changing how main_models work
+<!-- ------- changing how main_models work -->
