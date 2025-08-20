@@ -45,5 +45,4 @@ folders:
     - Plot all time series inside a file.
     - Plot two time series in one graph for comparison.
 
-
 <!-- ------- changing how main_models work -->
